@@ -1,0 +1,11 @@
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.AssemblyInfoInputs.cache
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.AssemblyInfo.cs
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.csproj.CoreCompileInputs.cache
+C:\Programming\BookLib\bin\Debug\net8.0-windows\BookLib.deps.json
+C:\Programming\BookLib\bin\Debug\net8.0-windows\BookLib.dll
+C:\Programming\BookLib\bin\Debug\net8.0-windows\BookLib.pdb
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.dll
+C:\Programming\BookLib\obj\Debug\net8.0-windows\refint\BookLib.dll
+C:\Programming\BookLib\obj\Debug\net8.0-windows\BookLib.pdb
+C:\Programming\BookLib\obj\Debug\net8.0-windows\ref\BookLib.dll
