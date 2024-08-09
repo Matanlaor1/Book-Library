@@ -1,0 +1,64 @@
+﻿<Window x:Class="LibraryProject.Views.SearchView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryProject.Views"
+        mc:Ignorable="d"
+        Title="SearchView" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Title"/>
+            <TextBox Name="tbTitle" Width="120" TextChanged="tbTitle_TextChanged"/>
+            <TextBlock Text="Price:"/>
+            <TextBox Name="tbPrice" Width="120" TextChanged="tbPrice_TextChanged"/>
+            <TextBlock Text="ISBN(Books):"/>
+            <TextBox Name="tbISBN" Width="120" TextChanged="tbISBN_TextChanged"/>
+            <TextBlock Text="Month(Journals)"/>
+            <ComboBox Name="cbMonths" Width="60" SelectionChanged="cbMonths_SelectionChanged"/>
+            <Button Name="SearchButton" Content="Search" Click="SearchButton_Click"/>
+        </StackPanel>
+        
+        <ListView Name="lvItems" Grid.Row="1" MouseDoubleClick="lvItems_MouseDoubleClick">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="{Binding Title}" Grid.Column="0" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Price}" Grid.Column="1" Margin="5,0,5,0"/>
+                        <TextBlock Text="{Binding Type}" Grid.Column="2" Margin="5,0,5,0"/>
+                        <TextBlock Text="{Binding ISBN}" Grid.Column="3" Margin="5,0,5,0"/>
+                        <TextBlock Text="{Binding Month}" Grid.Column="4" Margin="5,0,0,0"/>
+                    </Grid>
+                    
+                    <!--<StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}"/>
+                        <TextBlock Text=" - "/>
+                        <TextBlock Text="{Binding Price}" Foreground="Red"/>
+                        <TextBlock Width="20"/>
+                        <TextBlock Width="20"/>
+                        <TextBlock Width="20"/>
+                        <ListBoxItem>
+                            <Button Width="50" Height="20">delete</Button>
+                        </ListBoxItem>
+                    </StackPanel>-->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </Grid>
+    
+</Window>

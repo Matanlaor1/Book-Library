@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Wpf.Themes/1.1.0": {
+        "type": "package"
+      },
+      "BookLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BookLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookLib.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Wpf.Themes/1.1.0": {
+      "sha512": "oeGO9PSPUtNtTSMmB+N4MEdTWPTLRosd0R0gVvBQVT8HXCcbw05yzNJ7s0uG8WdjOe9JXqgnxe2vAq4Xd+B1Rg==",
+      "type": "package",
+      "path": "wpf.themes/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/App.xaml.transform",
+        "content/Themes/BureauBlack.xaml",
+        "content/Themes/BureauBlue.xaml",
+        "content/Themes/ExpressionDark.xaml",
+        "content/Themes/ExpressionLight.xaml",
+        "content/Themes/ShinyBlue.xaml",
+        "content/Themes/ShinyRed.xaml",
+        "content/Themes/WhistlerBlue.xaml",
+        "wpf.themes.1.1.0.nupkg.sha512",
+        "wpf.themes.nuspec"
+      ]
+    },
+    "BookLib/1.0.0": {
+      "type": "project",
+      "path": "../BookLib/BookLib.csproj",
+      "msbuildProject": "../BookLib/BookLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "BookLib >= 1.0.0",
+      "Wpf.Themes >= 1.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\laorm\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Programming\\LibraryProject\\LibraryProject.csproj",
+      "projectName": "LibraryProject",
+      "projectPath": "C:\\Programming\\LibraryProject\\LibraryProject.csproj",
+      "packagesPath": "C:\\Users\\laorm\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\LibraryProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\laorm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Programming\\BookLib\\BookLib.csproj": {
+              "projectPath": "C:\\Programming\\BookLib\\BookLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Wpf.Themes": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
